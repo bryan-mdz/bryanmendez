@@ -11,60 +11,58 @@
 
     <meta
         name="description"
-        content="Proyecto de Business Intelligence desarrollado en Power BI para análisis de ventas, presupuesto, rentabilidad y desempeño comercial."
+        content="Dashboard ejecutivo de Business Intelligence desarrollado en Power BI para análisis de ventas, presupuesto, rentabilidad y desempeño comercial."
     >
 
     <title>
         MedNova | Bryan Méndez
     </title>
 
-    <!--
-        IMPORTANTE:
-        Estamos dentro de /projects,
-        por eso usamos ../ para llegar
-        al style.css de la raíz.
-    -->
     <link
         rel="stylesheet"
-        href="../style.css?v=3"
+        href="./nova-report.css?v=1"
     >
-
 </head>
 
 
-<body class="project-page">
+<body>
 
 
-    <!-- ========================================
-         NAVEGACIÓN
-    ========================================= -->
+    <!-- =====================================================
+         NAVBAR
+    ====================================================== -->
 
-    <nav class="project-navbar">
+    <nav class="navbar">
 
-        <a
-            href="../index.html"
-            class="project-logo"
-        >
-            BM.
-        </a>
-
-
-        <div class="project-nav-links">
-
-            <a href="../index.html#proyectos">
-                Proyectos
-            </a>
-
-            <a href="../index.html#sobre-mi">
-                Sobre mí
-            </a>
+        <div class="navbar-inner">
 
             <a
                 href="../index.html"
-                class="back-link"
+                class="logo"
+                aria-label="Volver al inicio"
             >
-                ← Volver al portafolio
+                BM.
             </a>
+
+
+            <div class="nav-links">
+
+                <a href="../index.html#proyectos">
+                    Proyectos
+                </a>
+
+                <a href="../index.html#sobre-mi">
+                    Sobre mí
+                </a>
+
+                <a
+                    href="../index.html"
+                    class="back-button"
+                >
+                    ← Portafolio
+                </a>
+
+            </div>
 
         </div>
 
@@ -75,161 +73,83 @@
     <main>
 
 
-        <!-- ========================================
-             HERO DEL PROYECTO
-        ========================================= -->
+        <!-- =====================================================
+             HERO + POWER BI
+        ====================================================== -->
 
-        <section class="project-hero">
-
-
-            <div class="project-hero-inner">
+        <section class="hero">
 
 
-                <div class="project-breadcrumb">
-
-                    PORTAFOLIO
-                    <span>/</span>
-                    BUSINESS INTELLIGENCE
-                    <span>/</span>
-                    POWER BI
-
-                </div>
+            <div class="hero-inner">
 
 
-                <h1>
-                    Informe de Ventas
-                    <span>& Presupuesto</span>
-                </h1>
+                <!-- Información superior -->
+
+                <div class="hero-info">
 
 
-                <p class="project-lead">
-
-                    Dashboard ejecutivo desarrollado para centralizar
-                    el análisis comercial y facilitar el seguimiento
-                    de ventas, rentabilidad, presupuesto, clientes,
-                    categorías y centros de distribución.
-
-                </p>
+                    <div class="hero-copy">
 
 
-                <div class="project-tech-list">
-
-                    <span>Power BI</span>
-
-                    <span>DAX</span>
-
-                    <span>SQL</span>
-
-                    <span>Power Query</span>
-
-                    <span>HTML Content</span>
-
-                    <span>Data Modeling</span>
-
-                </div>
+                        <div class="breadcrumb">
+                            BUSINESS INTELLIGENCE
+                            <span>/</span>
+                            POWER BI
+                        </div>
 
 
-                <div class="project-actions">
-
-                    <a
-                        href="#reporte"
-                        class="btn-primary"
-                    >
-                        Explorar reporte
-                    </a>
+                        <h1>
+                            Informe de Ventas
+                            <span>& Presupuesto</span>
+                        </h1>
 
 
-                    <a
-                        href="../index.html#proyectos"
-                        class="btn-secondary"
-                    >
-                        Ver otros proyectos
-                    </a>
+                        <p class="hero-description">
 
-                </div>
-
-
-            </div>
-
-        </section>
-
-
-
-        <!-- ========================================
-             RESUMEN DEL PROYECTO
-        ========================================= -->
-
-        <section class="project-overview">
-
-
-            <div class="project-section-number">
-                01
-            </div>
-
-
-            <div class="project-overview-content">
-
-
-                <div class="project-section-heading">
-
-                    <p class="project-eyebrow">
-                        EL PROYECTO
-                    </p>
-
-                    <h2>
-                        Una visión ejecutiva del desempeño comercial
-                    </h2>
-
-                </div>
-
-
-                <div class="project-description-grid">
-
-
-                    <div class="project-description-main">
-
-                        <p>
-
-                            El objetivo del proyecto fue diseñar una
-                            experiencia de análisis que permitiera consultar
-                            desde una misma interfaz los principales
-                            indicadores relacionados con el desempeño
-                            comercial.
+                            Dashboard ejecutivo diseñado para analizar
+                            desempeño comercial, presupuesto, rentabilidad,
+                            clientes, categorías y centros de distribución
+                            desde una única experiencia interactiva.
 
                         </p>
 
 
-                        <p>
+                        <div class="tech-list">
 
-                            El reporte integra indicadores ejecutivos,
-                            análisis temporal, cumplimiento presupuestario,
-                            segmentación comercial y análisis por diferentes
-                            dimensiones del negocio.
+                            <span>Power BI</span>
+                            <span>DAX</span>
+                            <span>SQL</span>
+                            <span>Power Query</span>
+                            <span>HTML Content</span>
+                            <span>Data Modeling</span>
 
-                        </p>
+                        </div>
 
-
-                        <p>
-
-                            La solución combina visualizaciones tradicionales
-                            de Power BI con componentes personalizados
-                            desarrollados mediante HTML Content para mejorar
-                            la experiencia visual y la lectura de los
-                            indicadores.
-
-                        </p>
 
                     </div>
 
 
 
-                    <div class="project-info-card">
+                    <div class="hero-meta">
 
 
-                        <div class="project-info-item">
+                        <div class="meta-item">
 
-                            <span class="info-label">
-                                Tipo
+                            <span>
+                                PROYECTO
+                            </span>
+
+                            <strong>
+                                MedNova
+                            </strong>
+
+                        </div>
+
+
+                        <div class="meta-item">
+
+                            <span>
+                                TIPO
                             </span>
 
                             <strong>
@@ -239,36 +159,10 @@
                         </div>
 
 
-                        <div class="project-info-item">
+                        <div class="meta-item">
 
-                            <span class="info-label">
-                                Área
-                            </span>
-
-                            <strong>
-                                Ventas & Business Intelligence
-                            </strong>
-
-                        </div>
-
-
-                        <div class="project-info-item">
-
-                            <span class="info-label">
-                                Herramienta principal
-                            </span>
-
-                            <strong>
-                                Microsoft Power BI
-                            </strong>
-
-                        </div>
-
-
-                        <div class="project-info-item">
-
-                            <span class="info-label">
-                                Datos
+                            <span>
+                                DATOS
                             </span>
 
                             <strong>
@@ -284,304 +178,420 @@
                 </div>
 
 
-            </div>
 
-        </section>
+                <!-- ==========================================
+                     POWER BI
+                =========================================== -->
 
-
-
-        <!-- ========================================
-             CAPACIDADES
-        ========================================= -->
-
-        <section class="capabilities-section">
+                <div class="report-shell">
 
 
-            <div class="project-section-number">
-                02
-            </div>
+                    <!-- Barra estilo navegador -->
+
+                    <div class="browser-bar">
 
 
-            <div class="capabilities-content">
+                        <div class="browser-dots">
 
+                            <span></span>
+                            <span></span>
+                            <span></span>
 
-                <div class="project-section-heading">
-
-                    <p class="project-eyebrow">
-                        CAPACIDADES
-                    </p>
-
-                    <h2>
-                        ¿Qué permite analizar?
-                    </h2>
-
-                </div>
+                        </div>
 
 
 
-                <div class="capabilities-grid">
+                        <div class="browser-address">
 
+                            <span class="secure-icon">
+                                ●
+                            </span>
 
-                    <article class="capability-card">
+                            MedNova · Interactive Power BI Report
 
-                        <span class="capability-number">
-                            01
-                        </span>
-
-                        <h3>
-                            Indicadores ejecutivos
-                        </h3>
-
-                        <p>
-                            Seguimiento consolidado de los principales
-                            indicadores comerciales y financieros.
-                        </p>
-
-                    </article>
+                        </div>
 
 
 
-                    <article class="capability-card">
+                        <a
+                            href="https://app.powerbi.com/view?r=eyJrIjoiZDAxOTBlMTMtY2FmZC00OGRhLWE3ZTUtZDEyZTRhOTM3MzAxIiwidCI6Ijc2NjQ5ZmFmLWJlZjctNDNjMS05NzUyLWVjMmJlN2JkNThmMiIsImMiOjZ9"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            class="open-report"
+                        >
+                            Abrir ↗
+                        </a>
 
-                        <span class="capability-number">
-                            02
-                        </span>
 
-                        <h3>
-                            Presupuesto
-                        </h3>
-
-                        <p>
-                            Comparación entre desempeño comercial,
-                            presupuesto y nivel de cumplimiento.
-                        </p>
-
-                    </article>
+                    </div>
 
 
 
-                    <article class="capability-card">
+                    <!-- REPORTE REAL -->
 
-                        <span class="capability-number">
-                            03
-                        </span>
+                    <div class="powerbi-container">
 
-                        <h3>
-                            Evolución temporal
-                        </h3>
+                        <iframe
+                            title="MedNova"
+                            src="https://app.powerbi.com/view?r=eyJrIjoiZDAxOTBlMTMtY2FmZC00OGRhLWE3ZTUtZDEyZTRhOTM3MzAxIiwidCI6Ijc2NjQ5ZmFmLWJlZjctNDNjMS05NzUyLWVjMmJlN2JkNThmMiIsImMiOjZ9"
+                            frameborder="0"
+                            allowfullscreen="true">
+                        </iframe>
 
-                        <p>
-                            Análisis del comportamiento de las ventas
-                            y comparación entre diferentes períodos.
-                        </p>
-
-                    </article>
-
-
-
-                    <article class="capability-card">
-
-                        <span class="capability-number">
-                            04
-                        </span>
-
-                        <h3>
-                            Mix comercial
-                        </h3>
-
-                        <p>
-                            Análisis de participación por grupos de clientes,
-                            categorías y centros de distribución.
-                        </p>
-
-                    </article>
-
-
-
-                    <article class="capability-card">
-
-                        <span class="capability-number">
-                            05
-                        </span>
-
-                        <h3>
-                            Rentabilidad
-                        </h3>
-
-                        <p>
-                            Seguimiento de margen y profit desde diferentes
-                            perspectivas de análisis.
-                        </p>
-
-                    </article>
-
-
-
-                    <article class="capability-card">
-
-                        <span class="capability-number">
-                            06
-                        </span>
-
-                        <h3>
-                            Cobertura
-                        </h3>
-
-                        <p>
-                            Evaluación del cumplimiento y cobertura
-                            alcanzada por clientes y productos.
-                        </p>
-
-                    </article>
+                    </div>
 
 
                 </div>
 
 
-            </div>
 
-        </section>
-
+                <div class="report-footer">
 
 
-        <!-- ========================================
-             POWER BI INTERACTIVO
-        ========================================= -->
+                    <div class="live-status">
 
-        <section
-            id="reporte"
-            class="report-section"
-        >
+                        <span class="live-dot"></span>
 
+                        Reporte interactivo
 
-            <div class="report-header">
-
-
-                <div>
-
-                    <p class="project-eyebrow">
-                        DEMO INTERACTIVA
-                    </p>
-
-
-                    <h2>
-                        Explora el reporte
-                    </h2>
+                    </div>
 
 
                     <p>
-
-                        Utiliza los filtros, segmentadores y elementos
-                        interactivos del dashboard directamente desde
-                        esta página.
-
+                        Información ficticia creada exclusivamente
+                        con fines demostrativos y de portafolio.
                     </p>
 
-                </div>
-
-
-                <div class="live-badge">
-
-                    <span class="live-dot"></span>
-
-                    Power BI
 
                 </div>
 
 
             </div>
-
-
-
-            <div class="powerbi-browser">
-
-
-                <!-- Barra visual tipo navegador -->
-
-                <div class="browser-toolbar">
-
-
-                    <div class="browser-dots">
-
-                        <span></span>
-                        <span></span>
-                        <span></span>
-
-                    </div>
-
-
-                    <div class="browser-address">
-
-                        Interactive Power BI Report
-
-                    </div>
-
-
-                    <div class="browser-spacer"></div>
-
-
-                </div>
-
-
-
-                <!-- ===================================
-                     IFRAME REAL DE POWER BI
-                ==================================== -->
-
-                <div class="powerbi-wrapper">
-
-
-                    <iframe
-                        title="MedNova"
-                        src="https://app.powerbi.com/view?r=eyJrIjoiZDAxOTBlMTMtY2FmZC00OGRhLWE3ZTUtZDEyZTRhOTM3MzAxIiwidCI6Ijc2NjQ5ZmFmLWJlZjctNDNjMS05NzUyLWVjMmJlN2JkNThmMiIsImMiOjZ9"
-                        frameborder="0"
-                        allowfullscreen="true"
-                        loading="lazy">
-                    </iframe>
-
-
-                </div>
-
-
-            </div>
-
-
-
-            <p class="report-note">
-
-                Este proyecto utiliza información ficticia creada
-                exclusivamente con fines demostrativos y de portafolio.
-
-            </p>
-
 
         </section>
 
 
 
-        <!-- ========================================
+        <!-- =====================================================
+             EL PROYECTO
+        ====================================================== -->
+
+        <section class="content-section">
+
+
+            <div class="section-number">
+                01
+            </div>
+
+
+            <div class="section-content">
+
+
+                <div class="section-heading">
+
+                    <p class="eyebrow">
+                        EL PROYECTO
+                    </p>
+
+
+                    <h2>
+                        Una visión ejecutiva del
+                        desempeño comercial.
+                    </h2>
+
+                </div>
+
+
+
+                <div class="overview-grid">
+
+
+                    <div class="overview-text">
+
+                        <p>
+
+                            El proyecto fue diseñado para centralizar en una
+                            sola experiencia los principales indicadores
+                            relacionados con el desempeño comercial.
+
+                        </p>
+
+
+                        <p>
+
+                            El dashboard permite analizar resultados desde
+                            diferentes perspectivas, combinando indicadores
+                            ejecutivos, evolución temporal, presupuesto,
+                            rentabilidad y segmentación comercial.
+
+                        </p>
+
+
+                        <p>
+
+                            Para enriquecer la experiencia visual se
+                            combinaron visualizaciones tradicionales de
+                            Power BI con componentes personalizados
+                            desarrollados mediante HTML Content.
+
+                        </p>
+
+
+                    </div>
+
+
+
+                    <div class="objective-card">
+
+
+                        <p class="card-label">
+                            OBJETIVO
+                        </p>
+
+
+                        <h3>
+                            Convertir información comercial en una
+                            herramienta clara para la toma de decisiones.
+                        </h3>
+
+
+                        <div class="objective-line"></div>
+
+
+                        <p>
+
+                            El diseño prioriza jerarquía visual,
+                            navegación sencilla y acceso rápido
+                            a los indicadores más relevantes.
+
+                        </p>
+
+
+                    </div>
+
+
+                </div>
+
+
+            </div>
+
+        </section>
+
+
+
+        <!-- =====================================================
+             CAPACIDADES
+        ====================================================== -->
+
+        <section class="features-section">
+
+
+            <div class="features-inner">
+
+
+                <div class="section-number">
+                    02
+                </div>
+
+
+                <div class="section-content">
+
+
+                    <div class="section-heading">
+
+                        <p class="eyebrow">
+                            CAPACIDADES
+                        </p>
+
+
+                        <h2>
+                            ¿Qué permite analizar?
+                        </h2>
+
+                    </div>
+
+
+
+                    <div class="features-grid">
+
+
+                        <article class="feature-card">
+
+                            <span class="feature-number">
+                                01
+                            </span>
+
+                            <div class="feature-icon">
+                                KPI
+                            </div>
+
+                            <h3>
+                                Indicadores ejecutivos
+                            </h3>
+
+                            <p>
+                                Seguimiento consolidado de ventas,
+                                volumen, rentabilidad, margen y
+                                desempeño comercial.
+                            </p>
+
+                        </article>
+
+
+
+                        <article class="feature-card">
+
+                            <span class="feature-number">
+                                02
+                            </span>
+
+                            <div class="feature-icon">
+                                %
+                            </div>
+
+                            <h3>
+                                Presupuesto
+                            </h3>
+
+                            <p>
+                                Comparación entre resultados,
+                                objetivos establecidos y nivel
+                                de cumplimiento.
+                            </p>
+
+                        </article>
+
+
+
+                        <article class="feature-card">
+
+                            <span class="feature-number">
+                                03
+                            </span>
+
+                            <div class="feature-icon">
+                                ↗
+                            </div>
+
+                            <h3>
+                                Evolución temporal
+                            </h3>
+
+                            <p>
+                                Análisis del comportamiento de ventas
+                                y comparación entre diferentes períodos.
+                            </p>
+
+                        </article>
+
+
+
+                        <article class="feature-card">
+
+                            <span class="feature-number">
+                                04
+                            </span>
+
+                            <div class="feature-icon">
+                                MIX
+                            </div>
+
+                            <h3>
+                                Mix comercial
+                            </h3>
+
+                            <p>
+                                Participación por grupos de clientes,
+                                categorías y centros de distribución.
+                            </p>
+
+                        </article>
+
+
+
+                        <article class="feature-card">
+
+                            <span class="feature-number">
+                                05
+                            </span>
+
+                            <div class="feature-icon">
+                                $
+                            </div>
+
+                            <h3>
+                                Rentabilidad
+                            </h3>
+
+                            <p>
+                                Seguimiento de profit y margen
+                                desde distintas dimensiones
+                                del negocio.
+                            </p>
+
+                        </article>
+
+
+
+                        <article class="feature-card">
+
+                            <span class="feature-number">
+                                06
+                            </span>
+
+                            <div class="feature-icon">
+                                ✓
+                            </div>
+
+                            <h3>
+                                Cobertura
+                            </h3>
+
+                            <p>
+                                Evaluación del cumplimiento alcanzado
+                                por clientes, productos y segmentos.
+                            </p>
+
+                        </article>
+
+
+                    </div>
+
+
+                </div>
+
+
+            </div>
+
+        </section>
+
+
+
+        <!-- =====================================================
              ENFOQUE TÉCNICO
-        ========================================= -->
+        ====================================================== -->
 
-        <section class="technical-section">
+        <section class="content-section technical-section">
 
 
-            <div class="project-section-number">
+            <div class="section-number">
                 03
             </div>
 
 
-            <div class="technical-content">
+            <div class="section-content">
 
 
-                <div class="project-section-heading">
+                <div class="section-heading">
 
-                    <p class="project-eyebrow">
+                    <p class="eyebrow">
                         ENFOQUE TÉCNICO
                     </p>
 
+
                     <h2>
-                        Tecnología detrás del proyecto
+                        Tecnología detrás
+                        del proyecto.
                     </h2>
 
                 </div>
@@ -591,93 +601,146 @@
                 <div class="technical-grid">
 
 
-                    <div class="technical-item">
+                    <article class="technical-card">
 
-                        <h3>
-                            Power BI
-                        </h3>
+                        <div class="technical-header">
+
+                            <span>01</span>
+
+                            <h3>
+                                Power BI
+                            </h3>
+
+                        </div>
 
                         <p>
+
                             Desarrollo de la experiencia analítica,
                             navegación, visualizaciones y presentación
-                            de indicadores.
+                            ejecutiva de indicadores.
+
                         </p>
 
-                    </div>
+                    </article>
 
 
-                    <div class="technical-item">
 
-                        <h3>
-                            DAX
-                        </h3>
+                    <article class="technical-card">
+
+                        <div class="technical-header">
+
+                            <span>02</span>
+
+                            <h3>
+                                DAX
+                            </h3>
+
+                        </div>
 
                         <p>
-                            Construcción de indicadores, cálculos
-                            temporales, comparativos y métricas de
-                            desempeño.
+
+                            Construcción de indicadores,
+                            comparativos, cálculos temporales
+                            y métricas de desempeño.
+
                         </p>
 
-                    </div>
+                    </article>
 
 
-                    <div class="technical-item">
 
-                        <h3>
-                            Power Query
-                        </h3>
+                    <article class="technical-card">
+
+                        <div class="technical-header">
+
+                            <span>03</span>
+
+                            <h3>
+                                SQL
+                            </h3>
+
+                        </div>
 
                         <p>
-                            Preparación, transformación y estandarización
-                            de los datos utilizados por el modelo.
+
+                            Preparación y consulta de información
+                            para alimentar los procesos analíticos.
+
                         </p>
 
-                    </div>
+                    </article>
 
 
-                    <div class="technical-item">
 
-                        <h3>
-                            Data Modeling
-                        </h3>
+                    <article class="technical-card">
+
+                        <div class="technical-header">
+
+                            <span>04</span>
+
+                            <h3>
+                                Power Query
+                            </h3>
+
+                        </div>
 
                         <p>
+
+                            Transformación, limpieza y
+                            estandarización de los datos
+                            utilizados por el modelo.
+
+                        </p>
+
+                    </article>
+
+
+
+                    <article class="technical-card">
+
+                        <div class="technical-header">
+
+                            <span>05</span>
+
+                            <h3>
+                                Data Modeling
+                            </h3>
+
+                        </div>
+
+                        <p>
+
                             Organización del modelo para facilitar
                             análisis por tiempo, producto, cliente
                             y estructura comercial.
+
                         </p>
 
-                    </div>
+                    </article>
 
 
-                    <div class="technical-item">
 
-                        <h3>
-                            HTML Content
-                        </h3>
+                    <article class="technical-card">
+
+                        <div class="technical-header">
+
+                            <span>06</span>
+
+                            <h3>
+                                HTML Content
+                            </h3>
+
+                        </div>
 
                         <p>
-                            Desarrollo de componentes visuales
-                            personalizados para mejorar la presentación
-                            de indicadores.
+
+                            Creación de componentes visuales
+                            personalizados para mejorar la
+                            presentación y experiencia de usuario.
+
                         </p>
 
-                    </div>
-
-
-                    <div class="technical-item">
-
-                        <h3>
-                            UX / UI
-                        </h3>
-
-                        <p>
-                            Diseño orientado a jerarquía visual,
-                            navegación sencilla y lectura ejecutiva
-                            de la información.
-                        </p>
-
-                    </div>
+                    </article>
 
 
                 </div>
@@ -689,31 +752,46 @@
 
 
 
-        <!-- ========================================
-             SIGUIENTE PROYECTO
-        ========================================= -->
+        <!-- =====================================================
+             CIERRE
+        ====================================================== -->
 
-        <section class="next-project-section">
-
-
-            <p>
-                CONTINUAR EXPLORANDO
-            </p>
+        <section class="closing-section">
 
 
-            <h2>
-                Más proyectos de
-                <span>Business Intelligence.</span>
-            </h2>
+            <div class="closing-inner">
 
 
-            <a
-                href="../index.html#proyectos"
-                class="next-project-link"
-            >
-                Ver todos los proyectos →
-            </a>
+                <p class="closing-eyebrow">
+                    BRYAN MÉNDEZ · DATA & BI PORTFOLIO
+                </p>
 
+
+                <h2>
+                    Datos.
+                    <span>Análisis.</span>
+                    Decisiones.
+                </h2>
+
+
+                <p>
+
+                    Explora otros proyectos relacionados con
+                    Business Intelligence, analítica y
+                    visualización de datos.
+
+                </p>
+
+
+                <a
+                    href="../index.html#proyectos"
+                    class="closing-button"
+                >
+                    Ver todos los proyectos →
+                </a>
+
+
+            </div>
 
         </section>
 
@@ -722,11 +800,11 @@
 
 
 
-    <!-- ========================================
+    <!-- =====================================================
          FOOTER
-    ========================================= -->
+    ====================================================== -->
 
-    <footer class="project-footer">
+    <footer>
 
 
         <div>
@@ -742,9 +820,22 @@
         </div>
 
 
-        <a href="../index.html">
-            Volver al inicio ↑
-        </a>
+        <div class="footer-links">
+
+            <a href="../index.html">
+                Inicio
+            </a>
+
+            <a href="../index.html#proyectos">
+                Proyectos
+            </a>
+
+        </div>
+
+
+        <p class="copyright">
+            Portfolio © 2026
+        </p>
 
 
     </footer>
