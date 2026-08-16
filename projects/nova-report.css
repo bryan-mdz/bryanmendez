@@ -439,14 +439,20 @@ a {
     font-size: 7px;
 }
 
+/*OPEN REPORT*/
+
+
 .open-report {
+    position: relative;
+    overflow: hidden;
+
     justify-self: end;
 
     display: inline-flex;
     align-items: center;
     justify-content: center;
 
-    padding: 9px 16px;
+    padding: 10px 18px;
 
     background: #1a4281;
     color: white;
@@ -459,21 +465,108 @@ a {
     font-weight: 700;
 
     box-shadow:
-        0 4px 12px rgba(26, 66, 129, .18);
+        0 4px 14px rgba(26, 66, 129, .25);
 
     transition:
-        background .2s,
-        transform .2s,
-        box-shadow .2s;
+        background .25s,
+        transform .25s,
+        box-shadow .25s;
 }
+
+
+/* RESPLANDOR METÁLICO */
+
+.open-report::before {
+    content: "";
+
+    position: absolute;
+
+    top: -50%;
+    left: -70%;
+
+    width: 35%;
+    height: 200%;
+
+    background:
+        linear-gradient(
+            110deg,
+            transparent 0%,
+            rgba(255,255,255,.05) 25%,
+            rgba(255,255,255,.65) 50%,
+            rgba(255,255,255,.05) 75%,
+            transparent 100%
+        );
+
+    transform: rotate(12deg);
+
+    animation: button-shine 3.2s ease-in-out infinite;
+
+    pointer-events: none;
+}
+
+
+/* Mantiene el texto encima del brillo */
+
+.open-report {
+    isolation: isolate;
+}
+
+.open-report::before {
+    z-index: -1;
+}
+
+
+/* Movimiento del reflejo */
+
+@keyframes button-shine {
+
+    0% {
+        left: -70%;
+    }
+
+    55% {
+        left: -70%;
+    }
+
+    82% {
+        left: 135%;
+    }
+
+    100% {
+        left: 135%;
+    }
+}
+
+
+/* HOVER */
 
 .open-report:hover {
     background: #12366c;
 
-    transform: translateY(-1px);
+    transform: translateY(-2px) scale(1.02);
 
     box-shadow:
-        0 7px 18px rgba(26, 66, 129, .28);
+        0 8px 22px rgba(26, 66, 129, .38);
+}
+
+
+/* Accesibilidad */
+
+@media (prefers-reduced-motion: reduce) {
+
+    .open-report::before {
+        animation: none;
+    }
+
+}
+
+.open-report span {
+    position: relative;
+    z-index: 2;
+}
+
+.open-report::before {
+    z-index: 1;
 }
 
 
