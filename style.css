@@ -1,0 +1,418 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family:
+        Inter,
+        Segoe UI,
+        Arial,
+        sans-serif;
+
+    background: #f6f8fb;
+    color: #172033;
+}
+
+
+/* ------------------------------
+   HERO
+------------------------------ */
+
+.hero {
+    min-height: 92vh;
+    background:
+        linear-gradient(
+            135deg,
+            #07162d 0%,
+            #102d58 55%,
+            #1a4281 100%
+        );
+
+    color: white;
+    padding: 0 8%;
+}
+
+
+.navbar {
+    max-width: 1400px;
+    margin: auto;
+    height: 90px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+.logo {
+    font-size: 26px;
+    font-weight: 800;
+}
+
+
+.nav-links {
+    display: flex;
+    gap: 35px;
+}
+
+
+.nav-links a {
+    color: #dce7f8;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+
+.nav-links a:hover {
+    color: white;
+}
+
+
+.hero-content {
+    max-width: 1050px;
+    margin: auto;
+    padding-top: 130px;
+}
+
+
+.eyebrow {
+    letter-spacing: 3px;
+    font-size: 13px;
+    font-weight: 700;
+    color: #a9c5ef;
+    margin-bottom: 30px;
+}
+
+
+.hero h1 {
+    font-size: clamp(42px, 6vw, 78px);
+    line-height: 1.05;
+    max-width: 1000px;
+}
+
+
+.hero h1 span {
+    color: #a9c5ef;
+}
+
+
+.hero-description {
+    margin-top: 35px;
+    max-width: 680px;
+
+    font-size: 18px;
+    line-height: 1.7;
+
+    color: #d5e0f0;
+}
+
+
+.hero-buttons {
+    margin-top: 45px;
+}
+
+
+.btn-primary {
+    display: inline-block;
+
+    padding: 15px 28px;
+
+    background: white;
+    color: #16366c;
+
+    text-decoration: none;
+
+    border-radius: 7px;
+
+    font-weight: 700;
+
+    transition: .2s;
+}
+
+
+.btn-primary:hover {
+    transform: translateY(-2px);
+}
+
+
+/* ------------------------------
+   PROYECTOS
+------------------------------ */
+
+.projects-section {
+    max-width: 1400px;
+    margin: auto;
+
+    padding: 120px 6%;
+}
+
+
+.section-heading {
+    display: flex;
+    gap: 30px;
+
+    margin-bottom: 65px;
+}
+
+
+.section-number {
+    color: #1a4281;
+
+    font-size: 13px;
+    font-weight: 800;
+
+    letter-spacing: 2px;
+}
+
+
+.section-heading h2,
+.about-content h2 {
+    font-size: 42px;
+    margin-bottom: 12px;
+}
+
+
+.section-heading p {
+    max-width: 650px;
+
+    color: #6c7481;
+    line-height: 1.6;
+}
+
+
+.projects-grid {
+    display: grid;
+
+    grid-template-columns:
+        repeat(2, minmax(0, 1fr));
+
+    gap: 35px;
+}
+
+
+.project-card {
+    background: white;
+
+    border-radius: 15px;
+
+    overflow: hidden;
+
+    border: 1px solid #e6e9ef;
+
+    box-shadow:
+        0 12px 40px rgba(20, 40, 80, .07);
+
+    transition: .25s;
+}
+
+
+.project-card:hover {
+    transform: translateY(-5px);
+
+    box-shadow:
+        0 20px 50px rgba(20, 40, 80, .12);
+}
+
+
+.project-image {
+    aspect-ratio: 16 / 9;
+
+    background: #e9eef7;
+
+    overflow: hidden;
+}
+
+
+.project-image img {
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+    object-position: top;
+
+    transition: .4s;
+}
+
+
+.project-card:hover img {
+    transform: scale(1.02);
+}
+
+
+.project-content {
+    padding: 32px;
+}
+
+
+.project-type {
+    font-size: 11px;
+
+    color: #1a4281;
+
+    letter-spacing: 1.7px;
+
+    font-weight: 800;
+
+    margin-bottom: 15px;
+}
+
+
+.project-content h3 {
+    font-size: 27px;
+
+    margin-bottom: 15px;
+}
+
+
+.project-content > p:not(.project-type) {
+    color: #68707d;
+
+    line-height: 1.65;
+
+    margin-bottom: 25px;
+}
+
+
+.technologies {
+    display: flex;
+
+    flex-wrap: wrap;
+
+    gap: 8px;
+
+    margin-bottom: 25px;
+}
+
+
+.technologies span {
+    background: #edf3fb;
+
+    color: #234c85;
+
+    padding: 7px 11px;
+
+    border-radius: 5px;
+
+    font-size: 12px;
+
+    font-weight: 600;
+}
+
+
+.project-link {
+    color: #1a4281;
+
+    text-decoration: none;
+
+    font-weight: 700;
+}
+
+
+/* ------------------------------
+   SOBRE MI
+------------------------------ */
+
+.about-section {
+    background: #0c203e;
+
+    color: white;
+
+    padding: 120px 10%;
+
+    display: grid;
+
+    grid-template-columns:
+        100px minmax(0, 900px);
+
+    gap: 25px;
+}
+
+
+.about-section .section-number {
+    color: #8fb4ec;
+}
+
+
+.about-content p {
+    color: #ced9e9;
+
+    max-width: 800px;
+
+    line-height: 1.8;
+
+    font-size: 18px;
+
+    margin-top: 20px;
+}
+
+
+/* ------------------------------
+   FOOTER
+------------------------------ */
+
+footer {
+    padding: 40px 8%;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    color: #707784;
+
+    background: white;
+}
+
+
+footer strong {
+    color: #172033;
+}
+
+
+footer p {
+    margin-top: 5px;
+
+    font-size: 13px;
+}
+
+
+/* ------------------------------
+   RESPONSIVE
+------------------------------ */
+
+@media (max-width: 850px) {
+
+    .nav-links {
+        display: none;
+    }
+
+
+    .hero-content {
+        padding-top: 80px;
+    }
+
+
+    .projects-grid {
+        grid-template-columns: 1fr;
+    }
+
+
+    .about-section {
+        grid-template-columns: 1fr;
+    }
+
+
+    footer {
+        flex-direction: column;
+
+        align-items: flex-start;
+
+        gap: 20px;
+    }
+
+}
