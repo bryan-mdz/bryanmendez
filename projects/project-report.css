@@ -1331,26 +1331,53 @@ footer p {
 
 
     .browser-bar {
+        height: 54px;
+
         grid-template-columns:
-            70px
-            minmax(0, 1fr);
+            auto
+            1fr;
+
+        gap: 12px;
 
         padding:
             0 12px;
     }
 
 
-    .open-report {
+    /* En móvil priorizamos el CTA para abrir el reporte
+       en una experiencia más cómoda fuera del iframe. */
+    .browser-address {
         display: none;
     }
 
 
-    .browser-address {
-        overflow: hidden;
+    .open-report {
+        display: inline-flex;
 
-        text-overflow: ellipsis;
+        justify-self: end;
+
+        padding:
+            9px 14px;
+
+        font-size: 10px;
 
         white-space: nowrap;
+    }
+
+
+    /* Acortamos únicamente el texto visible en móvil sin
+       requerir cambios en los archivos HTML. */
+    .open-report span {
+        font-size: 0;
+    }
+
+
+    .open-report span::after {
+        content: "Abrir reporte ↗";
+
+        font-size: 10px;
+
+        font-weight: 700;
     }
 
 
