@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Expense Intelligence: motor estadístico explicable para analizar tendencias, recurrencia, cadencia y alertas de gastos con Python, SQL Server y Power BI.">
+  <meta name="theme-color" content="#250b16">
+  <title>Expense Intelligence | Bryan Méndez</title>
+  <!-- Diseño compartido con los otros proyectos del portafolio -->
+  <link rel="stylesheet" href="./project-report.css?v=4">
+  <!-- Ajustes exclusivos de este proyecto -->
+  <link rel="stylesheet" href="./expense-intelligence.css?v=1">
+</head>
+<body class="expense-page">
+  <nav class="navbar" aria-label="Navegación principal">
+    <div class="navbar-inner">
+      <a href="../index.html" class="logo" aria-label="Volver al inicio">BM.</a>
+      <div class="nav-links">
+        <a href="../index.html#proyectos">Proyectos</a>
+        <a href="../index.html#sobre-mi">Sobre mí</a>
+        <a href="../index.html" class="back-button">← Portafolio</a>
+      </div>
+    </div>
+  </nav>
+
+  <main>
+    <!-- Primero el trabajo: intro compacta y demostración -->
+    <section class="hero" id="inicio">
+      <div class="hero-inner">
+        <div class="hero-info">
+          <div class="hero-copy">
+            <div class="breadcrumb">BUSINESS INTELLIGENCE <span>/</span> STATISTICAL ANALYTICS</div>
+            <p class="expense-version">V1 · MOTOR DE CONTROL Y ANÁLISIS DE GASTOS</p>
+            <h1>Expense Intelligence <span>Financial Behavior &amp; Expense Monitoring</span></h1>
+            <p class="hero-description">Más allá del gasto registrado: un motor analítico para comprender tendencias, identificar patrones de recurrencia, estimar el comportamiento esperado y priorizar desviaciones que requieren revisión.</p>
+            <div class="tech-list" aria-label="Tecnologías principales">
+              <span>Python</span><span>SQL Server</span><span>Power BI</span><span>Pandas</span><span>NumPy</span><span>Statistical Modeling</span>
+            </div>
+          </div>
+          <div class="hero-meta">
+            <div class="meta-item"><span>PROYECTO</span><strong>Expense Intelligence</strong></div>
+            <div class="meta-item"><span>ENFOQUE</span><strong>Gastos · Tendencias · Alertas</strong></div>
+            <div class="meta-item"><span>INFORMACIÓN</span><strong>Datos demostrativos</strong></div>
+          </div>
+        </div>
+
+        <div class="report-shell" id="reporte">
+          <div class="browser-bar">
+            <div class="browser-dots" aria-hidden="true"><span></span><span></span><span></span></div>
+            <div class="browser-address"><span class="secure-icon">●</span> Expense Intelligence · Power BI Report</div>
+            <a class="open-report" id="open-report" href="#vistas" aria-label="Explorar las vistas del reporte">
+              <span class="open-label-desktop" id="label-desktop">Explorar vistas del reporte ↗</span>
+              <span class="open-label-mobile" id="label-mobile">Ver vistas ↗</span>
+            </a>
+          </div>
+          <div class="powerbi-container expense-report-host" id="report-host">
+            <!-- La captura se sustituye automáticamente por el iframe al colocar POWER_BI_URL al final. -->
+            <div class="expense-preview" id="preview">
+              <img src="../assets/images/expense-dashboard-1.png" alt="Vista previa del resumen ejecutivo de gastos operativos" fetchpriority="high">
+              <div class="preview-overlay"><span>VISTA PREVIA</span><strong>Monitoreo de gastos, patrones y alertas</strong><small>Consulta las tres vistas más abajo. El reporte interactivo se habilita al configurar el enlace público.</small></div>
+            </div>
+          </div>
+        </div>
+        <div class="report-footer">
+          <div class="live-status" id="report-status"><span class="live-dot"></span> Vista previa · 3 páginas de análisis</div>
+          <p>Información modificada para fines demostrativos. No contiene datos empresariales sensibles.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="content-section" id="proyecto">
+      <div class="section-number">01</div>
+      <div class="section-content">
+        <div class="section-heading"><p class="eyebrow">EL RETO</p><h2>Del saldo contable a la comprensión del comportamiento.</h2></div>
+        <div class="overview-grid">
+          <div class="overview-text">
+            <p>Revisar manualmente numerosas cuentas y centros de responsabilidad dificulta reconocer a tiempo tendencias sostenidas, cambios recientes o registros que aparecen en momentos atípicos del mes.</p>
+            <p>Este proyecto combina información transaccional, procesamiento automatizado y estadística explicable para responder no solo <strong>cuánto</strong> se ha gastado, sino también <strong>cómo, cuándo y con qué consistencia</strong> se producen los movimientos.</p>
+            <p>El motor permite recorrer los resultados desde un panorama ejecutivo hasta el detalle por cuenta y unidad de negocio, conservando las referencias analíticas que justifican cada clasificación.</p>
+          </div>
+          <aside class="objective-card">
+            <p class="card-label">PROPÓSITO ANALÍTICO</p>
+            <h3>Transformar la revisión de gastos en una investigación guiada por patrones y evidencia.</h3>
+            <div class="objective-line"></div>
+            <p>No sustituye el criterio financiero: orienta dónde profundizar y con qué nivel de confianza.</p>
+          </aside>
+        </div>
+        <div class="expense-highlights" aria-label="Elementos distintivos del motor">
+          <div><strong>3 · 6 · 9 · 12</strong><span>Meses de análisis multiventana</span></div>
+          <div><strong>7 · 14 · 21 · 28</strong><span>Días de checkpoints de cadencia</span></div>
+          <div><strong>Explicable</strong><span>Clasificación, severidad y confianza</span></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="features-section" id="capacidades">
+      <div class="features-inner">
+        <div class="section-number">02</div>
+        <div class="section-content">
+          <div class="section-heading"><p class="eyebrow">CAPACIDADES</p><h2>Seis formas de interpretar el gasto.</h2></div>
+          <div class="features-grid">
+            <article class="feature-card"><span class="feature-number">01</span><div class="feature-icon">↗</div><h3>Tendencias multiventana</h3><p>Comparación de horizontes de 3, 6, 9 y 12 meses para distinguir la dirección histórica de los cambios recientes.</p></article>
+            <article class="feature-card"><span class="feature-number">02</span><div class="feature-icon">⟳</div><h3>Perfilamiento y recurrencia</h3><p>Identificación de continuidad, frecuencia, magnitud y concentración del gasto por cuenta y unidad de negocio.</p></article>
+            <article class="feature-card"><span class="feature-number">03</span><div class="feature-icon">≈</div><h3>Referencia mensual esperada</h3><p>Estimación estadística mediante medianas históricas recientes; sirve de comparación, no de presupuesto oficial.</p></article>
+            <article class="feature-card"><span class="feature-number">04</span><div class="feature-icon">07</div><h3>Cadencia intra-mes</h3><p>Estudio de semanas habituales de registro y checkpoints completos para detectar adelantos y retrasos.</p></article>
+            <article class="feature-card"><span class="feature-number">05</span><div class="feature-icon">!</div><h3>Alertas interpretables</h3><p>Señales sobre excesos, aceleración, desviaciones de ritmo y posibles registros pendientes de revisión.</p></article>
+            <article class="feature-card"><span class="feature-number">06</span><div class="feature-icon">R²</div><h3>Confianza del análisis</h3><p>Las conclusiones consideran historial válido, estabilidad, continuidad y calidad del ajuste, incluso evidencia insuficiente.</p></article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="content-section" id="metodologia">
+      <div class="section-number">03</div>
+      <div class="section-content">
+        <div class="section-heading"><p class="eyebrow">ANALÍTICA ESTADÍSTICA EXPLICABLE</p><h2>El análisis detrás de las alertas.</h2></div>
+        <div class="expense-method-grid">
+          <div class="expense-method"><span>01 / SERIES TEMPORALES</span><h3>Dirección y cambio de tendencia</h3><p>Regresión lineal, pendientes, variaciones entre ventanas y coeficiente de determinación R² para evaluar el comportamiento de cada cuenta.</p></div>
+          <div class="expense-method"><span>02 / ESTADÍSTICA ROBUSTA</span><h3>Gasto de referencia</h3><p>Medianas de períodos cerrados de 6 y 12 meses, frecuencia de actividad y dispersión para construir estimaciones menos sensibles a valores extremos.</p></div>
+          <div class="expense-method"><span>03 / CADENCIA</span><h3>Cuándo ocurre el gasto</h3><p>Concentración temporal, semana principal y puntos de acumulación del 50% y 80%, contrastados con los cortes de los días 7, 14, 21 y 28.</p></div>
+          <div class="expense-method"><span>04 / SCORING</span><h3>Prioridades revisables</h3><p>Reglas de negocio y puntuación de severidad que transforman indicadores cuantitativos en señales operativas con dirección e importes.</p></div>
+        </div>
+        <div class="expense-caution"><strong>Interpretación responsable:</strong> una alerta indica una desviación que conviene investigar. No demuestra por sí sola errores, fraude o incumplimiento, ni garantiza el comportamiento futuro.</div>
+      </div>
+    </section>
+
+    <section class="features-section expense-architecture-section" id="arquitectura">
+      <div class="features-inner">
+        <div class="section-number">04</div>
+        <div class="section-content">
+          <div class="section-heading"><p class="eyebrow">ARQUITECTURA DEL MOTOR</p><h2>De los movimientos contables al monitoreo inteligente.</h2></div>
+          <div class="expense-pipeline" aria-label="Flujo de procesamiento de datos">
+            <div><b>01</b><strong>Origen contable</strong><span>SAP Business One</span></div>
+            <div><b>02</b><strong>SQL Server</strong><span>Vistas + staging</span></div>
+            <div><b>03</b><strong>Python</strong><span>Preparación de series</span></div>
+            <div><b>04</b><strong>Calibración</strong><span>Perfiles históricos</span></div>
+            <div><b>05</b><strong>Scoring</strong><span>Alertas + confianza</span></div>
+            <div><b>06</b><strong>Persistencia</strong><span>Snapshots auditables</span></div>
+            <div><b>07</b><strong>Power BI</strong><span>Exploración y detalle</span></div>
+          </div>
+          <div class="expense-principles">
+            <div><h3>Sin contaminación temporal</h3><p>El mes evaluado no alimenta la referencia histórica contra la cual se compara.</p></div>
+            <div><h3>Cierres contables y cortes justos</h3><p>Se separan movimientos técnicos y se evitan comparaciones con semanas incompletas.</p></div>
+            <div><h3>Trazabilidad</h3><p>Versiones, fechas de corte, identificadores de ejecución y controles sobre cambios retrospectivos.</p></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="content-section expense-views-section" id="vistas">
+      <div class="section-number">05</div>
+      <div class="section-content">
+        <div class="section-heading"><p class="eyebrow">EXPERIENCIA EN POWER BI</p><h2>Tres perspectivas para investigar el gasto.</h2></div>
+        <div class="expense-gallery">
+          <a href="../assets/images/expense-dashboard-1.png" target="_blank" rel="noopener noreferrer" class="expense-shot"><img loading="lazy" src="../assets/images/expense-dashboard-1.png" alt="Resumen de gastos operativos: acumulados, comparaciones y principales cuentas por sucursal"><div><span>VISTA 01</span><h3>Resumen de Gastos Operativos</h3><p>Seguimiento al corte, comparación histórica y cuentas relevantes por sucursal.</p><small>Ver imagen ampliada ↗</small></div></a>
+          <a href="../assets/images/expense-dashboard-2.png" target="_blank" rel="noopener noreferrer" class="expense-shot"><img loading="lazy" src="../assets/images/expense-dashboard-2.png" alt="Gastos crecientes: alertas priorizadas, tendencia histórica y posibles incrementos"><div><span>VISTA 02</span><h3>Gastos Crecientes</h3><p>Tendencias sostenidas, alertas por severidad y casos que requieren atención.</p><small>Ver imagen ampliada ↗</small></div></a>
+          <a href="../assets/images/expense-dashboard-3.png" target="_blank" rel="noopener noreferrer" class="expense-shot"><img loading="lazy" src="../assets/images/expense-dashboard-3.png" alt="Análisis de gastos, alertas y tendencias por sucursal, con clasificación y comparaciones"><div><span>VISTA 03</span><h3>Alertas y Tendencias</h3><p>Clasificaciones de comportamiento, comparación de gastos esperados y reales, y detalle por cuenta.</p><small>Ver imagen ampliada ↗</small></div></a>
+        </div>
+      </div>
+    </section>
+
+    <section class="features-section" id="herramientas">
+      <div class="features-inner">
+        <div class="section-number">06</div>
+        <div class="section-content">
+          <div class="section-heading"><p class="eyebrow">STACK TECNOLÓGICO</p><h2>Procesamiento, persistencia y visualización.</h2></div>
+          <div class="technical-grid">
+            <article class="technical-card"><div class="technical-header"><span>01</span><h3>Python · Pandas · NumPy</h3></div><p>Preparación de información, análisis temporal, calibración estadística y evaluaciones automatizables.</p></article>
+            <article class="technical-card"><div class="technical-header"><span>02</span><h3>SQL Server · T-SQL</h3></div><p>Staging transaccional, consultas analíticas, almacenamiento de resultados y auditoría.</p></article>
+            <article class="technical-card"><div class="technical-header"><span>03</span><h3>SQLAlchemy · PyODBC</h3></div><p>Conectividad y persistencia entre el motor Python y la base de datos.</p></article>
+            <article class="technical-card"><div class="technical-header"><span>04</span><h3>Power BI</h3></div><p>Lectura ejecutiva de resultados, segmentaciones y exploración de alertas hasta el detalle contable.</p></article>
+            <article class="technical-card"><div class="technical-header"><span>05</span><h3>SAP Business One</h3></div><p>Origen empresarial de los movimientos contables procesados por la solución.</p></article>
+            <article class="technical-card"><div class="technical-header"><span>06</span><h3>Validación y backtesting</h3></div><p>Revisión retrospectiva de reglas de cadencia, calidad de datos y consistencia entre ejecuciones.</p></article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="closing-section">
+      <div class="closing-inner"><p class="closing-eyebrow">BRYAN MÉNDEZ · DATA &amp; BI PORTFOLIO</p><h2>Menos revisión manual. <span>Más contexto para decidir.</span></h2><p>Comprender patrones, reconocer tendencias y anticipar desviaciones mediante analítica financiera interpretable y trazable.</p><a href="../index.html#proyectos" class="closing-button">Explorar más proyectos →</a></div>
+    </section>
+  </main>
+
+  <footer>
+    <div><strong>Bryan Méndez</strong><p>Business Intelligence · Data Analytics</p></div>
+    <div class="footer-links"><a href="../index.html">Inicio</a><a href="../index.html#proyectos">Proyectos</a></div>
+    <p class="copyright">Portfolio © 2026</p>
+  </footer>
+
+  <script>
+    /*
+      PEGA AQUÍ EL src DEL IFRAME DE "PUBLICAR EN LA WEB" DE ESTE REPORTE.
+      Ejemplo de formato: https://app.powerbi.com/view?r=...
+      No uses un enlace privado de Power BI Service.
+    */
+    const POWER_BI_URL = "https://app.powerbi.com/view?r=eyJrIjoiODk3ZDEzNDUtMTNjZi00MjEwLTk1ZDAtZDhkYzllNjY0NGZkIiwidCI6Ijc2NjQ5ZmFmLWJlZjctNDNjMS05NzUyLWVjMmJlN2JkNThmMiIsImMiOjZ9";
+
+    if (/^https:\/\/app\.powerbi\.com\/view\?r=/.test(POWER_BI_URL)) {
+      const host = document.getElementById("report-host");
+      const button = document.getElementById("open-report");
+      const frame = document.createElement("iframe");
+      frame.src = POWER_BI_URL;
+      frame.title = "Expense Intelligence - Reporte interactivo de Power BI";
+      frame.loading = "lazy";
+      frame.allowFullscreen = true;
+      frame.setAttribute("referrerpolicy", "strict-origin-when-cross-origin");
+      host.replaceChildren(frame);
+      button.href = POWER_BI_URL;
+      button.target = "_blank";
+      button.rel = "noopener noreferrer";
+      button.setAttribute("aria-label", "Abrir el reporte Power BI completo en una nueva pestaña");
+      document.getElementById("label-desktop").textContent = "Abrir reporte completo ↗";
+      document.getElementById("label-mobile").textContent = "Abrir reporte ↗";
+      document.getElementById("report-status").innerHTML = '<span class="live-dot"></span> Reporte interactivo · 3 páginas de análisis';
+    }
+  </script>
+</body>
+</html>
